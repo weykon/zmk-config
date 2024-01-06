@@ -13,7 +13,7 @@
             bindings = <
                 &kp TAB    &kp Q   &kp W   &kp E   &kp R   &kp T        &kp Y   &kp U  &kp I     &kp O   &kp P    &kp BSPC
                 &kp LCTRL  &kp A   &kp S   &kp D   &kp F   &kp G        &kp H   &kp J  &kp K     &kp L   &kp SEMI &kp SQT
-                &kp LSHFT  &kp Z   &kp X   &kp C   &kp V   &kp B        &kp N   &kp M  &kp COMMA &kp DOT &kp FSLH &kp ESC
+                &kp LSHFT  &kp Z   &kp X   &kp C   &kp V   &kp B        &kp N   &kp M  &kp COMMA &kp DOT &kp FSLH &kp ESE
                                   &kp LCMD  &mo 1     &kp SPACE         &kp RET &mo 2  &kp LALT
             >;
         };
@@ -29,7 +29,7 @@
 
         L2_layer {
             bindings = <
-                &kp TAB    &kp EXCL &kp AT   &kp HASH  &kp DLLR  &kp PRCN        &kp CARET  &kp AMPS   &kp STAR  &kp LPAR  &kp RPAR   &kp BSPC
+                &kp TAB    &kp EXCL &kp AT   &kp HASH  &kp DLLR  &kp PRCNT       &kp CARET &kp AMPS  &kp KP_MULTIPLY &kp LPAR &kp RPAR &kp BSPC
                 &kp LCTRL  &none    &none    &none     &none     &none           &kp MINUS  &kp EQUAL  &kp LBKT  &kp RBKT  &kp BSLH   &kp GRAVE
                 &kp LSHFT  &none    &none    &none     &none     &none           &none      &none      &none     &none     &none      &none
                                             &kp LCMD   &none     &kp RET            &kp RET    &none     &kp LALT

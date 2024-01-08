@@ -38,7 +38,7 @@
 
        L3_layer {
             bindings = <
-                &kp TAB   &none   &none    &none    &none    &none            &kp HOME     &kp PG_DN    &kp PG_UP    &kp END      &none        &kp DEL
+                &kp TAB   &none   &none    &none    &mo 4    &none            &kp HOME     &kp PG_DN    &kp PG_UP    &kp END      &none        &kp DEL
                 &kp LCTRL &none   &none    &none    &none    &none            &kp LEFT     &kp DOWN     &kp UP       &kp RIGHT    &none        &none
                 &kp LSHFT &none   &none    &none    &none    &none            &kp C_PREV   &kp C_VOL_DN &kp C_MUTE   &kp C_VOL_UP &kp C_NEXT   &kp C_PP
                                        &kp LGUI   &none    &kp SPACE            &kp RET      &none        &kp LALT

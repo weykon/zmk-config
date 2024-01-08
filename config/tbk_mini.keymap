@@ -6,6 +6,14 @@
 #include <dt-bindings/zmk/outputs.h>
 
 / {
+    conditional_layers {
+        compatible = "zmk,conditional-layers";
+        tri_layer {
+            if-layers = <1 2>;
+            then-layer = <3>;
+        };
+    };
+    
     keymap {
         compatible = "zmk,keymap";
 
@@ -22,7 +30,7 @@
             bindings = <
                 &kp TAB   &kp N1 &kp N2   &kp N3    &kp N4   &kp N5            &kp N6    &kp N7    &kp N8   &kp N9     &kp N0    &kp BSPC
                 &kp LCTRL &none  &none    &none     &none    &none             &kp LEFT  &kp DOWN  &kp UP   &kp RIGHT  &none     &none
-                &kp LSHFT &none  &none    &none     &none    &none             &none     &none     &none    &none      &none     &none
+                &kp LSHFT &none  &none    &none     &mo 4    &none             &none     &none     &none    &none      &none     &none
                                              &kp LCMD  &none     &kp SPACE      &kp RET   &none     &kp LALT
             >;
         };
@@ -66,16 +74,6 @@
                 &kp LSHFT  &kp FSLH &kp DOT &kp COMMA &kp M   &kp N        &none   &none   &none   &none   &none   &none
                                             &none     &none   &none        &none   &none   &none
             >;
-        };
-    };
-};
-
-/ {
-    conditional_layers {
-        compatible = "zmk,conditional-layers";
-        tri_layer {
-            if-layers = <1 2>;
-            then-layer = <3>;
         };
     };
 };

@@ -10,7 +10,7 @@
 / {
     conditional_layers {
         compatible = "zmk,conditional-layers";
-        L4_layer {
+        L3_layer {
             if-layers = <1 2>;
             then-layer = <3>;
         };
@@ -33,7 +33,7 @@
                 &kp TAB   &kp N1 &kp N2   &kp N3    &kp N4   &kp N5            &kp N6    &kp N7    &kp N8   &kp N9     &kp N0    &kp BSPC
                 &kp LCTRL &none  &none    &none     &none    &none             &kp LEFT  &kp DOWN  &kp UP   &kp RIGHT  &none     &none
                 &kp LSHFT &none  &none    &none     &mo 4    &none             &none     &none     &none    &none      &none     &none
-                                             &kp LCMD  &none     &kp SPACE      &kp RET   &none     &kp LALT
+                                             &kp LCMD  &trans     &kp SPACE      &kp RET   &trans    &kp LALT
             >;
         };
 
@@ -42,7 +42,7 @@
                 &kp TAB    &kp EXCL &kp AT   &kp HASH  &kp DLLR  &kp PRCNT       &kp CARET &kp AMPS  &kp KP_MULTIPLY &kp LPAR &kp RPAR &kp BSPC
                 &kp LCTRL  &none    &none    &none     &none     &none           &kp MINUS  &kp EQUAL  &kp LBKT  &kp RBKT  &kp BSLH   &kp GRAVE
                 &kp LSHFT  &none    &none    &none     &none     &none           &none      &none      &none     &none     &none      &none
-                                            &kp LCMD   &none     &kp RET            &kp RET    &none     &kp LALT
+                                            &kp LCMD   &trans     &kp RET            &kp RET    &trans     &kp LALT
             >;
         };
 

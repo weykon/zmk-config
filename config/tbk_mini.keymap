@@ -5,15 +5,19 @@
 #include <dt-bindings/zmk/bt.h>
 #include <dt-bindings/zmk/outputs.h>
 
+
+
 / {
-    conditional_layers {
-        compatible = "zmk,conditional-layers";
-        tri_layer {
-            if-layers = <1 2>;
-            then-layer = <3>;
+    / {
+        conditional_layers {
+            compatible = "zmk,conditional-layers";
+            L4_layer {
+                if-layers = <1 2>;
+                then-layer = <3>;
+            };
         };
     };
-    
+
     keymap {
         compatible = "zmk,keymap";
 
@@ -46,9 +50,9 @@
 
        L3_layer {
             bindings = <
-                &kp TAB   &none   &none    &none    &mo 4    &none            &kp HOME     &kp PG_DN    &kp PG_UP    &kp END      &none        &kp DEL
-                &kp LCTRL &none   &none    &none    &none    &none            &kp LEFT     &kp DOWN     &kp UP       &kp RIGHT    &none        &none
-                &kp LSHFT &none   &none    &none    &none    &none            &kp C_PREV   &kp C_VOL_DN &kp C_MUTE   &kp C_VOL_UP &kp C_NEXT   &kp C_PP
+                &kp TAB   &none   &none    &none    &tog 4      &none            &kp HOME     &kp PG_DN    &kp PG_UP    &kp END      &none        &kp DEL
+                &kp LCTRL &none   &none    &none    &kp N3      &none            &kp LEFT     &kp DOWN     &kp UP       &kp RIGHT    &none        &none
+                &kp LSHFT &none   &none    &none    &none       &none            &kp C_PREV   &kp C_VOL_DN &kp C_MUTE   &kp C_VOL_UP &kp C_NEXT   &kp C_PP
                                        &kp LGUI   &none    &kp SPACE            &kp RET      &none        &kp LALT
             >;
         };
@@ -61,7 +65,7 @@
             //                    |     |     |     |   |     |     |     |
             bindings = <
                 &bt BT_CLR  &none         &none         &none         &bootloader   &sys_reset          &sys_reset  &bootloader  &none  &none  &none  &none
-                &none       &none         &none         &none         &none         &out OUT_TOG        &none       &none        &none  &none  &none  &none
+                &none       &none         &none         &none         &kp N4        &out OUT_TOG        &none       &none        &none  &none  &none  &none
                 &none       &bt BT_SEL 0  &bt BT_SEL 1  &bt BT_SEL 2  &bt BT_SEL 3  &bt BT_SEL 4        &none       &none        &none  &none  &none  &none
                                                         &none         &none         &none               &none       &none        &none
             >;

@@ -27,13 +27,13 @@
                                   &kp LCMD  &mo 1     &kp SPACE         &kp RET &mo 2  &kp LALT
             >;
         };
-
+wq1q1w
         L1_layer {
             bindings = <
                 &kp TAB   &kp N1 &kp N2   &kp N3    &kp N4   &kp N5            &kp N6    &kp N7    &kp N8   &kp N9     &kp N0    &kp BSPC
                 &kp LCTRL &none  &none    &none     &none    &none             &kp LEFT  &kp DOWN  &kp UP   &kp RIGHT  &none     &none
                 &kp LSHFT &none  &none    &none     &mo 4    &none             &none     &none     &none    &none      &none     &none
-                                             &kp LCMD  &trans     &kp SPACE      &kp RET   &trans    &kp LALT
+                                   dasdasd    &kp LCMD  &trans     &kp SPACE      &kp RET   &trans    &kp LALT
             >;
         };
 
@@ -48,21 +48,21 @@
 
        L3_layer {
             bindings = <
-                &kp TAB   &none   &none    &none    &tog 4      &none            &kp HOME     &kp PG_DN    &kp PG_UP    &kp END      &none        &kp DEL
-                &kp LCTRL &none   &none    &none    &kp N3      &none            &kp LEFT     &kp DOWN     &kp UP       &kp RIGHT    &none        &none
-                &kp LSHFT &none   &none    &none    &none       &none            &kp C_PREV   &kp C_VOL_DN &kp C_MUTE   &kp C_VOL_UP &kp C_NEXT   &kp C_PP
+                &kp TAB   &none   &none    &none    &tog 4      &none            &kp C_BRI_DN   &kp C_BRI_UP  &kp C_PP    &kp C_VOL_DN  &kp C_VOL_UP   &kp C_NEXT
+                &kp LCTRL &none   &none    &none    &kp N3      &none            &kp LEFT       &kp PG_DN     &kp PG_UP   &kp RIGHT     &none          &none
+                &kp LSHFT &none   &none    &none    &none       &none            &none          &none         &none       &none         &none          &none
                                        &kp LGUI   &none    &kp SPACE            &kp RET      &none        &kp LALT
             >;
         };
 
         L4_layer {
             // -----------------------------------------------------------------------------------------
-            // | BTCLR|     |     |     | BOOT|RESET|   |RESET| BOOT|     |     |     |      |
+            // | BTCLR|BOOT |RESET|     |     | tog4|   |     |     |     |     |     |      |
             // |      |     |     |     |     | OUT |   |     |     |     |     |     |      |
             // |      | BT1 | BT2 | BT3 | BT4 | BT5 |   |     |     |     |     |     |      |
             //                    |     |     |     |   |     |     |     |
             bindings = <
-                &bt BT_CLR  &none         &none         &none         &bootloader   &sys_reset          &sys_reset  &bootloader  &none  &none  &none  &none
+                &bt BT_CLR  &bootloader   &sys_reset    &none         &tog 4        &none               &none       &none        &none  &none  &none  &none
                 &none       &none         &none         &none         &kp N4        &out OUT_TOG        &none       &none        &none  &none  &none  &none
                 &none       &bt BT_SEL 0  &bt BT_SEL 1  &bt BT_SEL 2  &bt BT_SEL 3  &bt BT_SEL 4        &none       &none        &none  &none  &none  &none
                                                         &none         &none         &none               &none       &none        &none

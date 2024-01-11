@@ -48,9 +48,9 @@
 
        L3_layer {
             bindings = <
-                &kp TAB   &none   &none    &none    &tog 4      &none            &kp C_BRI_DN   &kp C_BRI_UP  &kp C_PP    &kp C_VOL_DN  &kp C_VOL_UP   &kp C_NEXT
+                &kp TAB   &none   &none    &none    &none       &none            &kp C_BRI_DN   &kp C_BRI_UP  &kp C_PP    &kp C_VOL_DN  &kp C_VOL_UP   &kp C_NEXT
                 &kp LCTRL &none   &none    &none    &kp N3      &none            &kp LEFT       &kp PG_DN     &kp PG_UP   &kp RIGHT     &none          &none
-                &kp LSHFT &none   &none    &none    &none       &none            &none          &none         &none       &none         &none          &none
+                &kp LSHFT &none   &none    &none    &tog 4      &none            &none          &none         &none       &none         &none          &none
                                        &kp LGUI   &none    &kp SPACE             &kp RET      &none        &kp LALT
             >;
         };
@@ -62,7 +62,7 @@
             // |      | BT1 | BT2 | BT3 | BT4 | BT5 |   |     |     |     |     |     |      |
             //                    |     |     |     |   |     |     |     |
             bindings = <
-                &bt BT_CLR  &bootloader   &sys_reset    &none         &tog 4        &none               &none       &none        &none  &none  &none  &none
+                &bt BT_CLR  &bootloader   &sys_reset    &none         &bootloader   &sys_reset          &bootloader &sys_reset   &none  &none  &none  &none
                 &none       &none         &none         &none         &kp N4        &out OUT_TOG        &none       &none        &none  &none  &none  &none
                 &none       &bt BT_SEL 0  &bt BT_SEL 1  &bt BT_SEL 2  &bt BT_SEL 3  &bt BT_SEL 4        &none       &none        &none  &none  &none  &none
                                                         &none         &none         &none               &none       &none        &none
